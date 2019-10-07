@@ -1,4 +1,4 @@
-public class QuickSort {
+public class NaiiveQuickSort {
     /* This function takes last element as pivot,
        places the pivot element at its correct
        position in sorted array, and places all
@@ -40,14 +40,6 @@ public class QuickSort {
     {
         if (low < high)
         {
-            //Choose a random pivot between high and low
-            int randomPivot =(int) (Math.random() * (high - low)) + low;
-
-            //Swap high and randomPivot
-            long temp = arr[high];
-            arr[high] = arr[randomPivot];
-            arr[randomPivot] = temp;
-
             /* pi is pivot index, arr[pi] is
               now at right place */
             int pi = partition(arr, low, high);

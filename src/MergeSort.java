@@ -71,4 +71,9 @@ public class MergeSort {
             merge(arr, l, m, r);
         }
     }
+
+    static void sort(long arr[])
+    {
+        mergeSort(arr, 0, arr.length-1);
+    }
 }

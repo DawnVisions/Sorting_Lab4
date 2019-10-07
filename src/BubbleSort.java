@@ -1,6 +1,6 @@
-public class BubbleSort {
+public class BubbleSort{
 
-    static void bubbleSort(long arr[]) {
+    static void sort(long arr[]) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++)
             for (int j = 0; j < n - i - 1; j++)
